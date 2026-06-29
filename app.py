@@ -1,6 +1,3 @@
-
-Correct the typo error
-
 import streamlit as st
 import google.generativeai as genai
 
