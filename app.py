@@ -1,3 +1,6 @@
+
+Correct the typo error
+
 import streamlit as st
 import google.generativeai as genai
 
@@ -6,7 +9,7 @@ st.set_page_config(page_title="Wealthora YouTube Studio v4", layout="wide")
 
 # Fetch keys safely from your Streamlit TOML secrets
 if "GEMINI_API_KEY" in st.secrets:
-    genai.configure(api_api_key=st.secrets["GEMINI_API_KEY"])
+    genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 else:
     st.error("Missing GEMINI_API_KEY inside your Streamlit secrets configurations.")
 
